@@ -128,7 +128,7 @@ callbacks.
 
   # Version-control like Deleted/Added/Modified listing
   my (@listing, @modified);     # use closure to collect results
-  File::DirCompare->compare('old_tree', 'new_tree'), sub {
+  File::DirCompare->compare('old_tree', 'new_tree', sub {
     my ($a, $b) = @_;
     if (! $b) {
       push @listing, "D   $a";
