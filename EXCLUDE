@@ -1,5 +1,4 @@
 EXCLUDE
-TODO
 Makefile.old
 pm_to_blib
 
